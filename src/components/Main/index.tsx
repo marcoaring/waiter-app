@@ -1,4 +1,6 @@
+import { Categories } from "../Categories";
 import { Header } from "../Header";
+import { Menu } from "../Menu";
 
 import {
   CategoriesContainer,
@@ -13,8 +15,12 @@ export default function Main() {
     <>
       <Container edges={["top"]}>
         <Header />
-        <CategoriesContainer />
-        <MenuContainer />
+        <CategoriesContainer>
+          <Categories />
+        </CategoriesContainer>
+        <MenuContainer>
+          <Menu />
+        </MenuContainer>
       </Container>
 
       <Footer>
